@@ -152,19 +152,19 @@ namespace DeforeStopDesktop
             // 1. Usuarios
             CrearTarjeta(panelCentral, "👥 Usuarios", "Gestionar usuarios del sistema",
                 xInicial, y1, cardWidth, cardHeight, () => {
-                    new DeforeStopDesktop.Forms.UsuariosForm().ShowDialog();
+                    new DeforeStopDesktop.Views.UsuariosForm().ShowDialog();
                 });
 
             // 2. Zonas
             CrearTarjeta(panelCentral, "🌍 Zonas", "Reservas y áreas forestales",
                 xInicial + cardWidth + espacio, y1, cardWidth, cardHeight, () => {
-                    new DeforeStopDesktop.Forms.ZonasForm().ShowDialog();
+                    new DeforeStopDesktop.Views.ZonasForm().ShowDialog();
                 });
 
             // 3. Reportes
             CrearTarjeta(panelCentral, "📊 Reportes", "Generar y consultar reportes",
                 xInicial + (cardWidth + espacio) * 2, y1, cardWidth, cardHeight, () => {
-                    new DeforeStopDesktop.Forms.ReportesForm().ShowDialog();
+                    new DeforeStopDesktop.Views.ReportesForm().ShowDialog();
                 });
 
             // ============ SEGUNDA FILA (3 tarjetas) ============
@@ -173,19 +173,19 @@ namespace DeforeStopDesktop
             // 4. Imágenes
             CrearTarjeta(panelCentral, "🛰️ Imágenes", "Imágenes satelitales registradas",
                 xInicial, y2, cardWidth, cardHeight, () => {
-                    new DeforeStopDesktop.Forms.ImagenesForm().ShowDialog();
+                    new DeforeStopDesktop.Views.ImagenesForm().ShowDialog();
                 });
 
             // 5. Alertas
             CrearTarjeta(panelCentral, "🚨 Alertas", "Alertas de deforestación",
                 xInicial + cardWidth + espacio, y2, cardWidth, cardHeight, () => {
-                    new DeforeStopDesktop.Forms.AlertasForm().ShowDialog();
+                    new DeforeStopDesktop.Views.AlertasForm().ShowDialog();
                 });
 
             // 6. Denuncias (Zonas Deforestadas)
             CrearTarjeta(panelCentral, "📢 Denuncias", "Registro de hectáreas afectadas",
                 xInicial + (cardWidth + espacio) * 2, y2, cardWidth, cardHeight, () => {
-                    new DeforeStopDesktop.Forms.ZonasDeforestadasForm().ShowDialog();
+                    new DeforeStopDesktop.Views.ZonasDeforestadasForm().ShowDialog();
                 });
 
             this.Controls.Add(panelCentral);

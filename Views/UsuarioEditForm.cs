@@ -5,7 +5,7 @@ using DeforeStopDesktop.Config;
 using DeforeStopDesktop.Controllers;
 using DeforeStopDesktop.Models;
 
-namespace DeforeStopDesktop.Forms
+namespace DeforeStopDesktop.Views
 {
     public partial class UsuarioEditForm : Form
     {
